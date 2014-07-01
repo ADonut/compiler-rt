@@ -25,7 +25,7 @@ an unlinkable function it will work.
 
 Currently missing:
 
-`
+```
 jon:~/git/compiler-rt/clang_vectorproc/builtins-vectorproc/vectorproc/SubDir.lib__builtins$ /usr/local/llvm-vectorproc/bin/clang *.o
 
 Undefined symbol: enable_execute_stack.o: sysconf
@@ -59,7 +59,7 @@ symbol(s) not found
 clang-3.5: error: VectorProc-ld command failed with exit code 1 (use -v to see invocation)
 
 jon:~/git/compiler-rt/clang_vectorproc/builtins-vectorproc/vectorproc/SubDir.lib__builtins$
-`
+````
 
 TODO:
 - memcpy/memset from gpgpu/firmware/3D-renderer/utils.cpp
