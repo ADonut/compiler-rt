@@ -4,7 +4,7 @@
 # 'make/lib_info.mk'.
 
 # The compiler to use.
-CC := gcc
+CC := /usr/local/llvm-vectorproc/bin/clang
 
 # The compiler flags to use.
 CFLAGS := -Wall -Werror

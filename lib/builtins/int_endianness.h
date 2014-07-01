@@ -103,6 +103,12 @@
 #endif /* Windows */
 
 /* . */
+#if defined(__VECTORPROC__)
+
+#define _YUGA_LITTLE_ENDIAN 1
+#define _YUGA_BIG_ENDIAN    0
+
+#endif
 
 #if !defined(_YUGA_LITTLE_ENDIAN) || !defined(_YUGA_BIG_ENDIAN)
 #error Unable to determine endian
