@@ -14,8 +14,8 @@ Quick and dirty port to vectorproc arch. In-tree builds don't seem to support
 Run make with "CC=<llvm-vectorproc-install>/bin/clang" appended to the command line.
 
 Compile builtin library for vectorproc:
-$> make clang_vectorproc -j4 CC=<llvm-vectorproc-install>/bin/clang
-
+`$> make clang_vectorproc -j4 CC=<llvm-vectorproc-install>/bin/clang
+`
 Static library is available under clang_vectorproc/builtins/vectorproc/
 
 It is a static library and it's missing references to external functions. The
@@ -25,6 +25,7 @@ an unlinkable function it will work.
 
 Currently missing:
 
+`
 jon:~/git/compiler-rt/clang_vectorproc/builtins-vectorproc/vectorproc/SubDir.lib__builtins$ /usr/local/llvm-vectorproc/bin/clang *.o
 
 Undefined symbol: enable_execute_stack.o: sysconf
@@ -58,9 +59,9 @@ symbol(s) not found
 clang-3.5: error: VectorProc-ld command failed with exit code 1 (use -v to see invocation)
 
 jon:~/git/compiler-rt/clang_vectorproc/builtins-vectorproc/vectorproc/SubDir.lib__builtins$
-
+`
 
 TODO:
-memcpy/memset from gpgpu/firmware/3D-renderer/utils.cpp
-just nop abort(), or make it a simulator-only trap.
+- memcpy/memset from gpgpu/firmware/3D-renderer/utils.cpp
+- just nop abort(), or make it a simulator-only trap.
 
